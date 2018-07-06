@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/tomekw/.platformio/penv/bin:/home/tomekw/.platformio/penv:/usr/local/bin:/usr/bin:/bin:/usr/games",
+        "PLATFORMIO_CALLER": "vscode"
+    },
+    "files.associations": {
+        "functional": "cpp"
+    }
+}
