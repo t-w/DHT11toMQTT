@@ -1,8 +1,13 @@
+
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-
-
+/*****************************************************************************
+ * class Publisher
+ *
+ * Based on code provided in examples to the tutorial:
+ *  https://techtutorialsx.com/2017/04/09/esp8266-connecting-to-mqtt-broker/
+ *****************************************************************************/
 class Publisher
 {
     const char* ssid         = "WIFI";
