@@ -5,7 +5,8 @@ void Sensor::read()
 {
   unsigned long now = millis();
   //Serial.println(now, DEC);
-  if (now - last_read < 2000)
+
+  if (now - last_read < read_interval)
     return;
 
   last_read = now;
@@ -15,8 +16,8 @@ void Sensor::read()
   //Serial.println("Sample DHT11...");
   
   // read with raw sample data.
-  temperature = 0;
-  humidity    = 0;
+  //temperature = 0;
+  //humidity    = 0;
   memset (data, dsize, sizeof(byte));
 
   if ( int result = dht11.read( pinDHT11, &temperature, &humidity, data ) ) {
